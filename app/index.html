@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+
+        <!-- ..................................... -->
+        <!-- css -->
+        <!-- ..................................... -->
+
+        <link rel="stylesheet" type="text/css" href="engine/index.css"> 
+        <link rel="stylesheet" type="text/css" href="engine/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="engine/bulma.min.css">
+        <link rel="stylesheet" type="text/css" href="engine/animsition-4.0.2/css/animsition.min.css">
+        <link rel="stylesheet" type="text/css" href="engine/swiper-3.3.1/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="engine/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="layout.css">
+
+        <!-- ..................................... -->
+        <!-- cor da transição -->
+        <!-- ..................................... -->
+        <style media="screen">
+            .bg-init, .animsition-overlay-slide { background-color: #00ffff; }
+        </style>
+
+        <title>App</title>
+    </head>
+
+    <body class="bg-init" onload="onLoad()">
+
+        <!-- ..................................... -->
+        <!-- init -->
+        <!-- ..................................... -->
+
+        <div class="app"> 
+            <div id="deviceready"> 
+                <p class="event listening blink"> 
+                    Conectando... 
+                </p> 
+                <p class="event received"></p> 
+            </div>
+        </div>
+
+        <!-- ..................................... -->
+        <!-- conteúdo -->
+        <!-- ..................................... -->
+        
+        <div class="animsition-overlay animated fadeIn">
+
+            <div>
+                <ul class="submenus animated fadeInDown frame-1">
+                    <a 
+                       href="iframe.html"
+                       class="action animsition-link"   
+                       data-animsition-out-class="overlay-slide-out-bottom" 
+                       onclick="disableMobileMenu();" 
+                       >
+                        <li>submenu</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="swiper-container">   
+                <div class="swiper-wrapper">
+
+                    <!-- 01 -->
+                    <div class="swiper-slide hero is-fullheight index-bg">
+                        <div class="hero-body">
+                            <div class="container has-text-centered animated fadeInUp">
+                                <img src="img/logo.png" id="logo">
+                                <p>Toque na tela, deslize para lateral e navegue.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ..................................... -->
+
+                    <!-- 02 -->
+                    <div class="swiper-slide hero is-fullheight index-bg">
+                        <div class="hero-body">
+                            <div class="container has-text-centered">
+                                <a 
+                                   href="iframe.html"
+                                   class="action animsition-link"   
+                                   data-animsition-out-class="overlay-slide-out-bottom" 
+                                   onclick="disableMobileMenu();" 
+                                   >
+                                    <h1 class="title is-1">Iframe conector</h1>
+                                    <h1 class="subtitle is-5">Conexão de dados na nuvem</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ..................................... -->
+
+                </div>
+
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- ..................................... -->
+        <!-- audio -->
+        <!-- ..................................... -->
+        <!--<audio controls autoplay>
+<source src="intro.mp3" type="audio/mpeg">
+</audio>-->
+
+        <!-- ..................................... -->
+        <!-- scripts -->
+        <!-- ..................................... -->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="engine/jquery-v1.11.1/jquery-v1.11.1.min.js"></script>
+        <script type="text/javascript" src="engine/jquery-v1.11.1/jquery-v1.11.1.min.js"></script>
+        <script type="text/javascript" src="engine/animsition-4.0.2/js/animsition.min.js"></script>
+        <script type="text/javascript" src="engine/swiper-3.3.1/swiper.jquery.min.js"></script>
+        <script>
+            // ....................................
+            // init app
+            // ....................................
+            app.initialize(); 
+
+            // ....................................
+            // swiper config 
+            // ....................................
+            var swiper = new Swiper('.swiper-container', {
+
+                // Default
+                pagination: '.swiper-pagination',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                paginationClickable: true,
+                loop: true, 
+                simulateTouch: false, 
+                grabCursor: false,
+
+                // Configs
+                slidesPerView: 'auto',
+                speed: 400,
+                autoplay: 8000,
+                autoplayDisableOnInteraction: true
+            });
+
+            // ....................................
+            // page transition 
+            // ....................................
+            $(document).ready(function() {
+                $('.animsition-overlay').animsition({
+                    inClass: 'overlay-slide-in-left',
+                    outClass: 'overlay-slide-out-top',
+                    inDuration: 800,
+                    outDuration: 800,
+                    overlay : true,
+                    overlayClass : 'animsition-overlay-slide',
+                    overlayParentElement : 'body'
+                })
+
+            });
+        </script>
+    </body>
+</html>
