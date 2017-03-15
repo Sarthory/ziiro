@@ -41,12 +41,5 @@ $titulos = 'ZIIRO v1';
     <?php require('z-engine/php/engine-css.php') ?>
     <?php require('layout.php') ?>
 
-    <!-- ..................................... -->
-    <!-- cor da transição -->
-    <!-- ..................................... -->
-    <style media="screen">
-        .bg-init, .animsition-overlay-slide { background-color: #00ffff; }
-    </style>
-
 </head>
 

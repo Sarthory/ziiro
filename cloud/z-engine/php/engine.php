@@ -2,12 +2,10 @@
 <!-- bibliotecas -->
 <!-- ..................................... -->
 
-<script src="z-engine/js/jquery-1.11.1/jquery-v1.11.1.min.js"></script>
-<script src="z-engine/js/jquery-1.11.1/jquery-ui-v1.12.0.min.js"></script>
-<script src="z-engine/js/jquery-1.11.1/wow.min.js"></script>
+<script src="z-engine/js/jquery-3.1.1/jquery-3.1.1.min.js"></script>
+<script src="z-engine/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="z-engine/js/wow-1.1.2/wow.min.js"></script>
 <script src="z-engine/js/swiper-3.3.1/swiper.jquery.min.js"></script>
-<script src="z-engine/js/animsition-4.0.2/js/animsition.min.js"></script>
-
 
 <script>
     // ....................................
@@ -26,23 +24,6 @@
         speed: 400,
         autoplay: 8000,
         autoplayDisableOnInteraction: true
-    });
-
-    // ....................................
-    // page transition
-    // ....................................
-    
-    $(document).ready(function() {
-        $('.animsition-overlay').animsition({
-            inClass: 'overlay-slide-in-top',
-            outClass: 'fade-out',
-            inDuration: 800,
-            outDuration: 800,
-            overlay : true,
-            overlayClass : 'animsition-overlay-slide',
-            overlayParentElement : 'body'
-        })
-
     });
 
     // ....................................

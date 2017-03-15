@@ -32,7 +32,7 @@
     }
 
     @media all and (orientation:landscape){
-        
+        #logo{ width: 40%; }
     }
 
 </style>
