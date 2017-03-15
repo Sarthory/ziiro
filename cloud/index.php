@@ -9,10 +9,9 @@
     <!-- conteúdo -->
     <!-- ..................................... -->
 
-    <body class="bg-init">
+    <body>
 
-        <div class="animsition-overlay">
-
+        <div class="animisition-overlay">
             <!-- ..................................... -->
             <!-- section 01 -->
             <!-- ..................................... -->

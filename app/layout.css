@@ -34,7 +34,7 @@ nav .button:hover{ background-color: #ccc; color: #00ffff; border-color: #00ffff
 /* ---------------------------------------------------
 - swiper
 --------------------------------------------------- */
-.swiper-pagination-bullet{ background: #f2f2f2 !important;}
+.swiper-pagination-bullet{ background: #ccc !important;}
 .swiper-pagination-bullet-active { background: #00ffff !important; }
 .swiper-button-next{ color: #00ffff !important; }
 .swiper-button-next:hover{ color: #fff !important; }
